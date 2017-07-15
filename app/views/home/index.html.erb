@@ -1,12 +1,8 @@
 <%= provide :title, t(".index_title") %>
 
-<div id="content-wrapper">
-  <%= render "slider" %>
-  <%= render "who_we_are" %>
-  <%= render "lastest_courses", courses: @courses %>
-  <%= render "trainers", trainers: @trainers %>
-  <%= render "client_say" %>
-  <%= render "our_clients" %>
-</div>
-
-<%= javascript_include_tag "home" %>
+<%= render "slider", course: @course %>
+<%= render "who_we_are" %>
+<%= render "lastest_courses", courses: @courses %>
+<%= render "trainers", trainers: @trainers %>
+<%= render "about_us" %>
+<%= render "our_clients" %>

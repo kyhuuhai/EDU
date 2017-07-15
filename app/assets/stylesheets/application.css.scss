@@ -19,19 +19,3 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
-
-h1, h2, h3, h4, h5, p, span, a {
-  font-family: 'Roboto' !important;
-}
-
-.top-heading-custom {
-  background-image:url(heading.jpg);
-}
-
-.custom-hover.custom-hover:after {
-  background: none !important;
-}
-
-.custom-hover-detail.custom-hover-detail:before {
-  background: none !important;
-}

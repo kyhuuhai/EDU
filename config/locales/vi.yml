@@ -22,11 +22,11 @@ vi:
       quick_links: "Liên kết nhanh"
       home: "Trang chủ"
       courses: "Lịch khai giảng"
-      news: "Tin tức - Thông báo"
+      news: "Tin tức"
       contact: "Liên hệ"
       trainers: "Đội ngũ của chúng tôi"
       contact_us: "Liên hệ với chúng tôi"
-      framgia_address: "13F Keangnam Hanoi Landmark 72 Tower, Plot E6, Pham Hung Road, Nam Tu Liem Dist."
+      framgia_address: "Framgia Awesome Academy, 13F Keangnam Hanoi Landmark 72 Tower, Plot E6, Pham Hung Road, Nam Tu Liem Dist."
       faa: "Framgia Awesome Academy"
       copyright: "© 2017 Framgia Awesome Academy - All rights reserved."
     application_devise:
@@ -37,6 +37,10 @@ vi:
     slider:
       welcome: "Chào mừng đến với"
       faa: "Framgia Awesome Academy"
+      ruby_course: "Khóa học lập trình Ruby"
+      ruby_dev: "Ruby Development"
+      register: "Đăng ký"
+      coming_soon: "Comming Soon"
     who_we_are:
       who_we_are: "Chúng tôi là ai?"
       text: "Framgia Awesome Academy là một trung tâm đào tạo của công ty
@@ -44,13 +48,21 @@ vi:
         đào tạo theo chuẩn Framgia. Awesome Academy mong muốn sẽ trở thành nôi
         đào tạo và chắp cánh cho sự phát triển toàn diện của các lập trình viên
         trong tương lai."
+      agile_title: "Chương trình đào tạo"
       agile: "Chương trình đào tạo bài bản, được xây dựng theo mô hình Agile"
+      network_title: "Trực tiếp tham gia"
       network: "Được trực tiếp tham gia vào các dự án thực tế, hoạt động theo mô hình virtual company"
+      certificate_title: "Hệ thống đào tạo"
       certificate: "Hệ thống đào tạo theo chuẩn quốc tế được chứng nhận bởi IC Agile và Ruby Association sau khi hoàn thành khóa học"
+      teaching_title: "Môi trường học tập"
       teaching: "Môi trường học tập năng động, trẻ trung với cơ sở vật chất hiện đại."
+      expert_title: "Đội ngũ giảng dạy"
       expert: "Đội ngũ giảng dạy là những chuyên gia có nhiều năm kinh nghiệm trong lĩnh vực công nghệ thông tin."
+      job_title: "Hỗ trợ việc làm"
       job: "Cam kết hỗ trợ việc làm cho học viên sau khóa học."
+      sort_skill_title: "Kỹ năng mềm"
       sort_skill: "Học viên được đào tạo để phát triển kỹ năng mềm một cách toàn diện."
+      activities_title: "Hoạt động ngoại khóa"
       activities: "Tham gia các hoạt động ngoại khóa hấp dẫn và bổ ích."
     lastest_courses:
       lastest_courses: "Những khóa học mới nhất"
@@ -59,21 +71,28 @@ vi:
       more: "Xem tất cả"
     trainers:
       trainers: "Đội ngũ của chúng tôi"
+      introduce: "Framgia Awesome Academy là một trung tâm đào tạo của công ty
+        Framgia Việt Nam, được hình thành trên cơ sở kế thừa và nhân rộng mô hình
+        đào tạo theo chuẩn Framgia. Awesome Academy mong muốn sẽ trở thành
+        nôi đào tạo và chắp cánh cho sự phát triển toàn diện của các lập trình viên
+        trong tương lai."
       more: "Xem tất cả"
-    client_say:
+    about_us:
       about_us: "Giới thiệu ngắn về chúng tôi"
       our_mission: "Sứ mệnh"
-      mission_text: "Duis aute irure dolor in reprehenderit in voluptate velit
-        esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla"
+      mission_text1: "Những kinh nghiệm thực tiễn trong quá trình học và tham gia
+        các dự án tại hệ thống đối tác sẽ là hành trang vững chắc cho học viên
+        sau khi tốt nghiệp. "
+      mission_text2: "Mỗi bài học đều là một bước thành công mới mà học viên sẽ đạt được."
+      mission_text3: "Chúng tôi tin sự trải nghiệm lớn hơn hết các khóa học về kĩ năng mềm, đó là thành công lớn nhất mà tạo dựng được."
       our_vision: "Tầm nhìn"
-      vision_text: "Duis aute irure dolor in reprehenderit in voluptate velit
-        esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla"
+      vision_text1: "Những kinh nghiệm thực tiễn trong quá trình học và tham gia
+        các dự án tại hệ thống đối tác sẽ là hành trang vững chắc cho học viên sau khi tốt nghiệp."
+      vision_text2: "Mỗi bài học đều là một bước thành công mới mà học viên sẽ đạt được."
       core_value: "Giá trị cốt lõi"
-      core_value_text: "Duis aute irure dolor in reprehenderit in voluptate velit
-        esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla"
+      core_value_text1: "Mỗi bài học đều là một bước thành công mới mà học viên sẽ đạt được."
+      core_value_text2: "Chúng tôi tin sự trải nghiệm lớn hơn hết các khóa học
+        về kĩ năng mềm, đó là thành công lớn nhất mà tạo dựng được."
       client_said: "Nhận xét từ khách hàng"
       client1_name: "TEAMLAB"
       client1_said: "Chúng tôi không thể hài lòng hơn với Framgia Awesome Academy.
@@ -133,9 +152,12 @@ vi:
       duration: "Thời gian học"
       deadline: "Hạn cuối đăng ký"
     index:
-      all_course: "Danh mục các khóa học"
+      all_course: "Khóa học"
       course: "Khóa học"
       search_course: "Tìm kiếm khóa học"
+      load_more: "Xem thêm"
+      comming_soon: "Comming Soon"
+      search: "Tìm kiếm"
     show:
       detail_course: "Chi tiết khóa học"
       course: "Khóa học"

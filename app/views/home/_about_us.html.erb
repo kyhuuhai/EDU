@@ -1,0 +1,37 @@
+<div id="bottom-a" class="full-bottom-a">
+  <div class="container">
+    <div class="about-us">
+      <h2 class="title-box"><%= t ".about_us" %></h2>
+      <div class="all-about">
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active">
+            <a href="#tab-1" data-toggle="tab"><%= t ".our_mission" %></a>
+          </li>
+          <li role="presentation">
+            <a href="#tab-2" data-toggle="tab"><%= t ".our_vision" %></a>
+          </li>
+          <li role="presentation">
+            <a href="#tab-3" data-toggle="tab"><%= t ".core_value" %></a>
+          </li>
+        </ul>
+        <div class="tab-content col-md-7 col-sm-9">
+          <div role="tabpanel" class="tab-pane active" id="tab-1">
+            <p><%= t ".mission_text1" %></p>
+            <p><%= t ".mission_text2" %></p>
+            <p><%= t ".mission_text3" %></p>
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="tab-2">
+            <p><%= t ".vision_text1" %></p>
+            <p><%= t ".vision_text1" %></p>
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="tab-3">
+            <p><%= t ".core_value_text1" %></p>
+            <p><%= t ".core_value_text2" %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

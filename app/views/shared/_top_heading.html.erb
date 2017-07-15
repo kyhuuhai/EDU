@@ -1,14 +1,19 @@
-<div class="tt-topheading background-block top-heading-custom">
+<div id="breadcrumb" class="full-breadcrumb">
   <div class="container">
-  <h2 class="tt-topheading-title c-h3"><span><%= title %></span></h2>
-    <ul class="tt-breadcrumbs">
-      <li>
-        <%= link_to root_path do%>
-          <i class="fa fa-home" aria-hidden="true"></i>
-          <%= t ".home" %>
-        <% end %>
-      </li>
-      <li><span><%= page_name %></span></li>
-    </ul>
+    <div class="header-page row">
+      <div class="title-page col-md-3 col-sm-3">
+        <h2><%= title %></h2>
+      </div>
+      <div class="breadcrumbs col-md-9 col-sm-9">
+        <ul>
+          <li>
+            <%= link_to root_path do%>
+              <%= t ".home" %>
+            <% end %>
+          </li>
+          <li class="active"><span><%= page_name %></span></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>

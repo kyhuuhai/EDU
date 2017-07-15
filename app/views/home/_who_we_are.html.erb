@@ -1,127 +1,60 @@
-<div class="bg-1">
-  <div class="container who-we-are-container">
-    <div class="empty-space marg-lg-b85 marg-sm-b50 marg-xs-b30"></div>
-    <div class="tt-heding">
-      <h2 class="tt-heding-title c-h2 txt-uppercase">
-        <span><%= t ".who_we_are" %></span>
-      </h2>
-    </div>
-    <div class="empty-space marg-lg-b35 marg-sm-b30"></div>
-
-    <div class="simple-text">
-      <p><%= t ".text" %></p>
-    </div>
-    <div class="empty-space marg-lg-b45 marg-sm-b30"></div>
-
-    <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <a class="tt-service clearix faa-service-detail">
-          <div class="tt-service-icon faa-icon-service">
-            <%= image_tag "introduction/agile.png" %>
+<div id="top-a" class="full-top-a">
+  <div class="container">
+    <div class="all-features">
+      <h2 class="title-box"><%= t ".who_we_are" %></h2>
+      <p class="desc-box col-md-8 col-md-offset-2">
+        <%= t ".text" %>
+      </p>
+      <div class="list-features">
+        <div class="item item-1 col-md-3 col-sm-6">
+          <div class="content-item">
+            <h3><%= t ".agile_title" %></h3>
+            <p><%= t ".agile" %></p>
           </div>
-          <div class="tt-service-info">
-            <div class="simple-text size-3">
-              <p><%= t ".agile" %></p>
-            </div>
+        </div>
+        <div class="item item-2 col-md-3 col-sm-6">
+          <div class="content-item">
+            <h3><%= t ".network_title" %></h3>
+            <p><%= t ".network" %></p>
           </div>
-        </a>
-        <div class="empty-space marg-md-b30"></div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <a class="tt-service clearix faa-service-detail">
-          <div class="tt-service-icon faa-icon-service">
-            <%= image_tag "introduction/network.png" %>
+        </div>
+        <div class="item item-3 col-md-3 col-sm-6">
+          <div class="content-item">
+            <h3><%= t ".certificate_title" %></h3>
+            <p><%= t ".certificate" %></p>
           </div>
-          <div class="tt-service-info">
-            <div class="simple-text size-3">
-              <p><%= t ".network" %></p>
-            </div>
+        </div>
+        <div class="item item-4 col-md-3 col-sm-6">
+          <div class="content-item">
+            <h3><%= t ".teaching_title" %></h3>
+            <p><%= t ".teaching" %></p>
           </div>
-        </a>
-        <div class="empty-space marg-md-b30"></div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <a class="tt-service clearix faa-service-detail">
-          <div class="tt-service-icon faa-icon-service">
-            <%= image_tag "introduction/certificate.png" %>
+        </div>
+        <div class="item item-5 col-md-3 col-sm-6">
+          <div class="content-item">
+            <h3><%= t ".expert_title" %></h3>
+            <p><%= t ".expert" %></p>
           </div>
-          <div class="tt-service-info">
-            <div class="simple-text size-3">
-              <p><%= t ".certificate" %></p>
-            </div>
+        </div>
+        <div class="item item-6 col-md-3 col-sm-6">
+          <div class="content-item">
+            <h3><%= t ".job_title" %></h3>
+            <p><%= t ".job" %></p>
           </div>
-        </a>
-        <div class="empty-space marg-md-b30"></div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <a class="tt-service clearix faa-service-detail">
-          <div class="tt-service-icon faa-icon-service">
-            <%= image_tag "introduction/teaching.png" %>
+        </div>
+        <div class="item item-7 col-md-3 col-sm-6">
+          <div class="content-item">
+            <h3><%= t ".sort_skill_title" %></h3>
+            <p><%= t ".sort_skill" %></p>
           </div>
-          <div class="tt-service-info">
-            <div class="simple-text size-3">
-              <p><%= t ".teaching" %></p>
-            </div>
+        </div>
+        <div class="item item-8 col-md-3 col-sm-6">
+          <div class="content-item">
+            <h3><%= t ".activities_title" %></h3>
+            <p><%= t ".activities" %></p>
           </div>
-        </a>
-        <div class="empty-space marg-md-b30"></div>
+        </div>
       </div>
     </div>
-
-    <div class="row mg-top-20">
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <a class="tt-service clearix faa-service-detail">
-          <div class="tt-service-icon faa-icon-service">
-            <%= image_tag "introduction/expert.png" %>
-          </div>
-          <div class="tt-service-info">
-            <div class="simple-text size-3">
-              <p><%= t ".expert" %></p>
-            </div>
-          </div>
-        </a>
-        <div class="empty-space marg-md-b30"></div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <a class="tt-service clearix faa-service-detail">
-          <div class="tt-service-icon faa-icon-service">
-            <%= image_tag "introduction/job.png" %>
-          </div>
-          <div class="tt-service-info">
-            <div class="simple-text size-3">
-              <p><%= t ".job" %></p>
-            </div>
-          </div>
-        </a>
-        <div class="empty-space marg-md-b30"></div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <a class="tt-service clearix faa-service-detail">
-          <div class="tt-service-icon faa-icon-service">
-            <%= image_tag "introduction/sort_skill.png" %>
-          </div>
-          <div class="tt-service-info">
-            <div class="simple-text size-3">
-              <p><%= t ".sort_skill" %></p>
-            </div>
-          </div>
-        </a>
-        <div class="empty-space marg-md-b30"></div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <a class="tt-service clearix faa-service-detail">
-          <div class="tt-service-icon faa-icon-service">
-            <%= image_tag "introduction/activities.png" %>
-          </div>
-          <div class="tt-service-info">
-            <div class="simple-text size-3">
-              <p><%= t ".activities" %></p>
-            </div>
-          </div>
-        </a>
-        <div class="empty-space marg-md-b30"></div>
-      </div>
-    </div>
-    <div class="empty-space marg-lg-b90 marg-sm-b50 marg-xs-b30"></div>
   </div>
 </div>

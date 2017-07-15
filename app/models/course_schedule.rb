@@ -7,8 +7,6 @@ class CourseSchedule < ApplicationRecord
   validates :start_date, presence: true
   validates :end_date, presence: true
 
-  scope :popular, ->{left_joins(:registrations).group(:id)
-    .order("COUNT(registrations.id) DESC").first(Settings.courses.popular)}
   scope :newest, ->{order start_date: :desc}
 
   delegate :name, to: :course, prefix: true, allow_nil: true

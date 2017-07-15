@@ -1,7 +1,6 @@
 class NewsController < ApplicationController
   before_action :load_news, only: :show
   before_action :popular_courses
-  before_action :latest_news
 
   def index
     @newses = News.includes(:image).newest.page(params[:page])

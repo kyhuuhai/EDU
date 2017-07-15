@@ -1,38 +1,52 @@
-<div id="content-wrapper">
-  <%= render "shared/top_heading", title: t(".all_course"),
-    page_name: t(".course") %>
-  <div class="bg-1 tt-sidebar-right tt-overflow">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-9">
-          <div class="tt-two-colors pright20">
-            <div class="empty-space marg-lg-b90 marg-sm-b50 marg-xs-b30"></div>
-            <div class="tt-searchbar-top">
-              <div class="tt-searchbar-form">
-                <input type="text" id="search-input" placeholder="<%= t ".search_course" %>">
-                <div class="tt-searchbar-submit">
-                  <i class="stroke-icon icon-Search"></i>
-                </div>
+<%= render "shared/top_heading", title: t(".all_course"),
+  page_name: t(".course") %>
+<div id="main-content" class="full-content">
+  <div class="container">
+    <div class="row">
+      <div id="component" class="col-md-9 col-sm-9">
+        <div class="category-view">
+          <div class="search-bar">
+            <%= form_tag courses_path, method: "get", multipart: true,
+              class: "search-form col-md-9 col-sm-9" do %>
+              <div class="search">                
+                <%= text_field_tag :words, nil, class: "input-text",
+                  placeholder: t(".search_course") %>
+                <%= submit_tag t(".search"), class: "btn-submit btn-blue" %>
               </div>
-              <a class="tt-searchbar-view active" href="#" data-view="grid">
-                <i class="fa fa-th-large" aria-hidden="true"></i>
-              </a>
-              <a class="tt-searchbar-view" href="#" data-view="list">
-                <i class="fa fa-list" aria-hidden="true"></i>
-              </a>
+            <% end %>
+          </div>
+
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#grid-layout" data-toggle="tab"><i class="fa fa-th-large" aria-hidden="true"></i></a></li>
+            <li role="presentation" class=""><a href="#list-layout" data-toggle="tab"><i class="fa fa-list-ul" aria-hidden="true"></i></a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="grid-layout">
+              <div class="grid-view list-class row">
+                <% @courses.each do |course| %>
+                  <%= render "course_grid", course: course %>
+                <% end %>
+              </div>
+              
+            <%= link_to_next_page @courses, t(".load_more"),
+              class: "load-more", remote: true %>
             </div>
-            <div class="tt-seachbar-content clearfix contain-courses" data-view="grid">
-              <%= render @courses %>
-              <%= paginate @courses %>
+            <div role="tabpanel" class="tab-pane" id="list-layout">
+              <div class="list-view">
+                <% @courses.each do |course| %>
+                  <%= render "course_list", course: course %>
+                <% end %>
+              </div>
+
+              <a class="load-more" href="">Xem thêm</a>
             </div>
-            <div class="empty-space marg-lg-b135 marg-md-b120 marg-sm-b50 marg-xs-b30"></div>
           </div>
         </div>
-        <%= render "right_sidebar_course" %>
       </div>
+      <%= render "right_sidebar_course" %>
     </div>
   </div>
 </div>
-<div class="render-form-registration"></div>
 
 <%= javascript_include_tag "courses" %>

@@ -1,0 +1,23 @@
+@mixin font {
+  font-family: 'Roboto';
+}
+
+@mixin font-black {
+  font-family: 'Roboto';
+  font-weight: 900;
+}
+
+@mixin font-bold {
+  font-family: 'Roboto';
+  font-weight: 700;
+}
+
+@mixin btn-blue($font, $height, $padding) {
+  font-size: $font;
+  height: $height;
+  line-height: $height;
+  color: $color-white;
+  border-radius: 5px;
+  background-color: $color-blue;
+  padding: $padding;
+}

@@ -1,7 +1,4 @@
-<div class="col-md-3">
-  <div class="pleft20">
-    <div class="empty-space marg-lg-b90 marg-sm-b50 marg-xs-b30"></div>
-    <%= render "shared/popular_course", popular_courses: @popular_courses %>
-    <%= render "shared/latest_news", latest_news: @latest_news %>
-  </div>                    
+<div id="sidebar" class="rightbar col-md-3 col-sm-3">
+  <%= render "shared/popular_course", popular_courses: @popular_courses %>
+  <%= render "shared/latest_news", latest_news: @latest_news %>
 </div>

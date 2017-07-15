@@ -1,17 +1,21 @@
-<header class="tt-header">
+<nav id="header" class="full-header navbar navbar-fixed-top">
   <div class="container">
-    <div class="top-inner">
-      <%= link_to root_path, class: "logo" do %>
-        <%= image_tag "logo-faa.png", class: "logo-faa-img", alt: t(".logo_alt") %>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to root_path, class: "navbar-brand" do %>
+        <%= image_tag "logo.png" %>
       <% end %>
     </div>
-    <button class="cmn-toggle-switch"><span></span></button>
-    <div class="toggle-block">
-      <nav class="main-nav clearfix">
-        <ul class="faa-header-text">
-          <%= view_object(:home_tabs).html %>
-        </ul>
-      </nav>
+
+    <div id="navbar" class="navbar-collapse collapse pull-right">
+      <ul class="nav navbar-nav">
+        <%= view_object(:home_tabs).html %>
+      </ul>
     </div>
   </div>
-</header>
+</nav>

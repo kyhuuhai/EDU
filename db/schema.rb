@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170629013342) do
+ActiveRecord::Schema.define(version: 20170714022456) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -57,8 +57,10 @@ ActiveRecord::Schema.define(version: 20170629013342) do
     t.text     "description"
     t.text     "content"
     t.float    "cost"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
+    t.string   "technique"
+    t.boolean  "on_slider_index", default: false
   end
 
   create_table "delayed_jobs", force: :cascade do |t|
@@ -122,6 +124,7 @@ ActiveRecord::Schema.define(version: 20170629013342) do
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
     t.text     "introduction"
+    t.string   "position"
   end
 
   add_foreign_key "course_schedules", "courses"

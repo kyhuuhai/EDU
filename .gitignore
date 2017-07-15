@@ -79,3 +79,6 @@ node_modules
 app/assets/javascripts/manifest.json
 app/assets/javascripts/webpack-bundle.js
 client/webpack.config.js
+
+
+public/frontend/prepros.cfg

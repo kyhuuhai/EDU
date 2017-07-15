@@ -1,6 +1,5 @@
 class CourseSchedulesController < ApplicationController
   before_action :popular_courses
-  before_action :latest_news
   before_action :find_schedule, only: :show
 
   def index

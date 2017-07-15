@@ -1,26 +1,18 @@
-<div class="tt-heding type-3">
-  <h5 class="tt-heding-title c-h5 txt-uppercase">
-    <span><small><%= t ".popular_course" %></small></span>
-  </h5>
-</div>
-<div class="empty-space marg-lg-b15"></div>
-<ul class="tt-scours-wrapper">
-  <% popular_courses.each do |popular| %>
-    <li>
-      <div class="tt-scours clearfix">
-        <%= link_to course_path(popular.course), class: "tt-scours-img custom-hover" do %>
-          <%= load_image popular.course, "image-popular-course"%>
-        <% end %>
-        <div class="tt-scours-info">
-          <%= link_to popular.course.name, course_path(popular.course),
-            class: "tt-scours-title" %>
-          <div class="tt-scours-price">
-            <%= number_to_currency popular.course.cost, unit: "đ", precision: 0,
-              delimiter: ".", format: "%n %u" %>
-          </div>
+<div class="common-class">
+  <h3><%= t ".popular_course" %></h3>
+  <ul>
+    <% popular_courses.each do |popular| %>
+      <li>
+        <div class="img-class">
+          <%= link_to course_path(popular) do %>
+            <%= load_image popular %>
+          <% end %>
         </div>
-      </div>
-    </li>
-  <% end %>
-</ul>
-<div class="empty-space marg-lg-b40"></div>
+        <div class="info-class">
+          <%= link_to popular.name, course_path(popular) %>
+          <%= appear_cost popular.cost %>
+        </div>
+      </li>      
+    <% end %>
+  </ul>
+</div>

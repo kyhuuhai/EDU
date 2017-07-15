@@ -1,0 +1,17 @@
+<div class="i-class col-md-4 col-sm-4">
+  <div class="media">
+    <%= link_to course_path(course) do %>
+      <%= load_image course %>
+    <% end %>
+  </div>
+  <div class="info">
+    <h3 class="name-class">
+      <%= link_to course.name, course_path(course) %>
+    </h3>
+    <p class="date">
+      <%= load_register_time course.newest_schedule %>
+    </p>
+    <%= appear_cost course.cost %>
+    <span class="language"><%= course.technique %></span>
+  </div>
+</div>

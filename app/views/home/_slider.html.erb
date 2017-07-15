@@ -1,81 +1,42 @@
-<div class="rev_slider_wrapper" id="rev_slider_235_1_wrapper">
-  <div class="rev_slider" data-version="5.0" id="rev_slider_235_1">
-    <ul data-autoplay="1" data-loop="1" data-speed="500">
-      <li data-transition="random" data-ease="SlowMo.ease" data-val="0">
-        <div class="tt-rev-overlay"></div>
-        <%= image_tag "welcome1.jpg" %>
-        <h1 class="tp-caption sfb tp-resizeme tt-rev-title"
-          data-x="center" data-hoffset="0"
-          data-y="top" data-voffset="370"
-          data-whitespace="nowrap"
-          data-transform_idle="o:1;"
-          data-transform_in="o:0"
-          data-transform_out="o:0"
-          data-start="500">
-          <%= t ".welcome" %>
-        </h1>
-        <h1 class="tp-caption sfb tp-resizeme tt-rev-title text-center"
-          data-x="center" data-hoffset="0"
-          data-y="top" data-voffset="442"
-          data-whitespace="nowrap"
-          data-width="850"
-          data-transform_idle="o:1;"
-          data-transform_in="o:0"
-          data-transform_out="o:0"
-          data-start="1000">
-          <%= t ".faa" %>
-        </h1>
-      </li>
-      <li data-transition="random" data-ease="SlowMo.ease" data-val="1">
-        <div class="tt-rev-overlay"></div>
-        <%= image_tag "welcome2.jpg" %>
-        <h1 class="tp-caption sfb tp-resizeme tt-rev-title"
-          data-x="center" data-hoffset="0"
-          data-y="top" data-voffset="370"
-          data-whitespace="nowrap"
-          data-transform_idle="o:1;"
-          data-transform_in="o:0"
-          data-transform_out="o:0"
-          data-start="500">
-          <%= t ".welcome" %>
-        </h1>
-        <h1 class="tp-caption sfb tp-resizeme tt-rev-title text-center"
-          data-x="center" data-hoffset="0"
-          data-y="top" data-voffset="442"
-          data-whitespace="nowrap"
-          data-width="850"
-          data-transform_idle="o:1;"
-          data-transform_in="o:0"
-          data-transform_out="o:0"
-          data-start="1000">
-          <%= t ".faa" %>
-        </h1>
-      </li>
-      <li data-transition="random" data-ease="SlowMo.ease" data-val="2">
-        <div class="tt-rev-overlay"></div>
-        <%= image_tag "welcome3.jpg" %>
-        <h1 class="tp-caption sfb tp-resizeme tt-rev-title"
-          data-x="center" data-hoffset="0"
-          data-y="top" data-voffset="370"
-          data-whitespace="nowrap"
-          data-transform_idle="o:1;"
-          data-transform_in="o:0"
-          data-transform_out="o:0"
-          data-start="500">
-          <%= t ".welcome" %>
-        </h1>
-        <h1 class="tp-caption sfb tp-resizeme tt-rev-title text-center"
-          data-x="center" data-hoffset="0"
-          data-y="top" data-voffset="442"
-          data-whitespace="nowrap"
-          data-width="850"
-          data-transform_idle="o:1;"
-          data-transform_in="o:0"
-          data-transform_out="o:0"
-          data-start="1000">
-          <%= t ".faa" %>
-        </h1>
-      </li>
-    </ul>
+<div id="showcase" class="full-showcase">
+  <div class="container">
+    <div class="row">
+      <div class="left-box col-md-8 col-sm-8">
+        <div class="js-slide media-slide">
+          <div class="item"><a href=""><img alt="<%= t ".faa" %>"
+            src="media/slide-1.jpg"></a></div>
+          <div class="item"><a href=""><img alt="<%= t ".faa" %>"
+            src="media/slide-2.jpg"></a></div>
+          <div class="item"><a href=""><img alt="<%= t ".faa" %>"
+            src="media/slide-3.jpg"></a></div>
+        </div>
+      </div>
+
+      <% if course %>
+        <div class="right-box col-md-4 col-sm-4">
+          <div class="box-info">
+            <div class="top-banner">
+              <a href="javascript:;"><img alt="<%= t ".faa" %>" src="media/top-banner.jpg"></a>
+            </div>
+            <div class="top-info">
+              <h2>
+                <%= link_to load_link course do %>
+                  <%= t ".ruby_course" %> <br> (<%= t ".ruby_dev" %>)
+                <% end %>
+              </h2>
+              <p class="time">
+                <%= load_register_time course.newest_schedule %></p>
+              <%= appear_cost course.cost %>
+              <% if course.newest_schedule %>
+                <%= link_to new_registration_path(schedule: course.newest_schedule.id),
+                  class: "registration", remote: true do %>
+                  <%= t ".register" %>
+                <% end %>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>

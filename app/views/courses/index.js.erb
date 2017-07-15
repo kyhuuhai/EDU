@@ -1,0 +1,6 @@
+<% @courses.each do |course| %>
+  $('.grid-view').append("<%= j render(partial: 'course_grid', locals: {course: course}) %>");
+  $('.list-view').append("<%= j render(partial: 'course_list', locals: {course: course}) %>");
+<% end %>
+$('.load-more').replaceWith("<%= escape_javascript(link_to_next_page(@courses, t('.load_more'), \
+  remote: true, class: 'load-more'))%>");
